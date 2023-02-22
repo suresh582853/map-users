@@ -46,7 +46,7 @@ const GoogleMaps = () => {
   return (
     <div style={{ height: '50vh', width: '100%' }}>
       <GoogleMapReact
-        bootstrapURLKeys={{ key: 'AIzaSyBRTfKUigunkP3WvYPA9YeNn3P8FGmKPi0' }}
+        bootstrapURLKeys={{ key: '' }}
         defaultCenter={{ lat: -37.3159, lng: 81.1496 }}
         defaultZoom={1}
         yesIWantToUseGoogleMapApiInternals
