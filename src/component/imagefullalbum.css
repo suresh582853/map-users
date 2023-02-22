@@ -1,0 +1,76 @@
+.StyledPopUpBackdrop {
+ position: fixed;
+ height: 100%;
+ width: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ background: #413f3f85;
+ left: 0;
+ top: 0;
+}
+
+.StyledPopUp {
+   
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.imageicon{
+  position: relative;
+}
+.close{
+  position: absolute;
+  color: #1e1a1a;
+  margin-left:10px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(74, 136, 32);
+  text-decoration: none;
+  cursor: pointer;
+}
+.image-container {
+  position: relative;
+}
+.prev-button {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.next-button {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.prev-button,
+.next-button {
+  background-color: #fff;
+  border: 1px solid #000;
+  color: #000;
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.prev-button:hover,
+.next-button:hover {
+  background-color: #000;
+  color: #fff;
+}
